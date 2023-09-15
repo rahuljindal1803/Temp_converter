@@ -1,0 +1,141 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+/* Set a background color for the body */
+body {
+  background-color: #daeeeb;
+  font-family: "Segoe UI" sans-serif;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Create a container for the card */
+
+.card-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3b2424;
+  background: rgb(63, 158, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 158, 251, 0.9473039215686274) 0%,
+    rgba(60, 62, 79, 1) 98%,
+    rgba(88, 205, 239, 0.756827731092437) 99%
+  );
+  border-radius: 10px;
+  box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  text-align: center;
+  height: 400px;
+  width: 465px;
+  margin: 2px;
+}
+
+.header h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: #f0f0f0;
+}
+#From,
+#To {
+  width: 218px;
+  height: 28px;
+  padding: 21px;
+  border: 1px solid #ccc;
+  border-radius: 27px;
+  margin: 5px;
+}
+
+label {
+  width: 44px;
+  height: 16px;
+  color: #fff;
+  font-weight: bold;
+  text-align: end;
+}
+
+input[type="text"] {
+  width: 170px;
+  height: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.input-to {
+  width: 379px;
+  margin-top: 30px;
+}
+.lableTo {
+  margin-right: 20px;
+}
+select {
+  width: 145px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px;
+}
+.calc {
+  margin-top: 15px;
+}
+.calc-button,
+.reset-button {
+  background-color: #adb6c0;
+  color: #1f1d1d;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.calc-button:hover,
+.reset-button:hover {
+  background-color: #7ca4ce;
+}
+
+.facts {
+  width: 403px;
+  margin: 55px 32px;
+}
+.random-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(97, 38, 38);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 14%,
+    rgba(46, 156, 117, 1) 99%,
+    rgba(0, 212, 255, 0.31416316526610644) 100%
+  );
+  height: 100px;
+  border-radius: 15px;
+  box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.2);
+}
+h3 {
+  color: #f1f1f1;
+  text-align: center;
+}
+p {
+  color: #f1f1f1;
+  text-align: center;
+}
+#fact {
+  margin-top: 10px;
+}

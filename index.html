@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temp Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-temp">
+        <div class="header">
+          <h2>Temperature Converter</h2>
+        </div>
+        <form id="tempCalc" onsubmit="convertTemperature(); return false">
+          <div class="input-from">
+            <label for="fromValue">From:</label>
+            <input
+              type="text"
+              placeholder="C"
+              id="fromValue"
+              name="fromValue"
+            />
+            <select name="temp1" id="fromUnit" class="select-from">
+              <option value="celsius">Celsius (°C)</option>
+              <option value="fahrenheit">Fahrenheit (°F)</option>
+              <option value="kelvin">Kelvin (K)</option>
+              <option value="rankine">Rankine (°R)</option>
+              <option value="reaumur">Reaumur (°Re)</option>
+              <option value="newton">Newton (°N)</option>
+              <option value="delisle">Delisle (°De)</option>
+            </select>
+          </div>
+          <div class="input-to">
+            <label for="toValue" class="lableTo">To:</label>
+            <input type="text" placeholder="F" id="toValue" />
+            <select name="temp2" id="toUnit" class="select-to">
+              <option value="celsius">Celsius (°C)</option>
+              <option value="fahrenheit">Fahrenheit (°F)</option>
+              <option value="kelvin">Kelvin (K)</option>
+              <option value="rankine">Rankine (°R)</option>
+              <option value="reaumur">Reaumur (°Re)</option>
+              <option value="newton">Newton (°N)</option>
+              <option value="delisle">Delisle (°De)</option>
+            </select>
+          </div>
+
+          <div class="calc">
+            <button class="calc-button" type="submit" id="Calculate">
+              Calculate
+            </button>
+          </div>
+
+          <div class="reset">
+            <button class="reset-button" type="button" onclick="resetValues()">
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="random-flex">
+        <div class="facts">
+          <h3>Random Facts</h3>
+          <p id="fact"></p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
