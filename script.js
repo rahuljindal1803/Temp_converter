@@ -15,6 +15,46 @@ const unitMap = {
     newton: (value) => ((value - 32) * 11) / 60,
     delisle: (value) => ((212 - value) * 5) / 6,
   },
+  kelvin: {
+    celsius: (value) => value - 273.15,
+    fahrenheit: (value) => ((value - 273.15) * 9) / 5 + 32,
+    rankine: (value) => (value * 9) / 5,
+    reaumur: (value) => ((value - 273.15) * 4) / 5,
+    newton: (value) => ((value - 273.15) * 33) / 100,
+    delisle: (value) => ((373.15 - value) * 3) / 2,
+  },
+  rankine: {
+    celsius: (value) => ((value - 491.67) * 5) / 9,
+    fahrenheit: (value) => value - 459.67,
+    kelvin: (value) => (value * 5) / 9,
+    reaumur: (value) => ((value - 491.67) * 4) / 9,
+    newton: (value) => ((value - 491.67) * 11) / 60,
+    delisle: (value) => ((671.67 - value) * 5) / 6,
+  },
+  reaumur: {
+    celsius: (value) => (value * 5) / 4,
+    fahrenheit: (value) => (value * 9) / 4 + 32,
+    kelvin: (value) => (value * 5) / 4 + 273.15,
+    rankine: (value) => (value * 9) / 4 + 491.67,
+    newton: (value) => (value * 33) / 80,
+    delisle: (value) => ((80 - value) * 15) / 8,
+  },
+  newton: {
+    celsius: (value) => (value * 100) / 33,
+    fahrenheit: (value) => (value * 60) / 11 + 32,
+    kelvin: (value) => (value * 100) / 33 + 273.15,
+    rankine: (value) => (value * 60) / 11 + 491.67,
+    reaumur: (value) => (value * 80) / 33,
+    delisle: (value) => ((33 - value) * 50) / 11,
+  },
+  delisle: {
+    celsius: (value) => 100 - (value * 2) / 3,
+    fahrenheit: (value) => 212 - (value * 6) / 5,
+    kelvin: (value) => 373.15 - (value * 2) / 3,
+    rankine: (value) => 671.67 - (value * 6) / 5,
+    reaumur: (value) => 80 - (value * 8) / 15,
+    newton: (value) => 33 - (value * 11) / 50,
+  },
 };
 
 const convertTemperature = () => {
